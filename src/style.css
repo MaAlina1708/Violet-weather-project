@@ -15,7 +15,10 @@ button {
 h1 {
   font-size: 50px;
 }
-
+small {
+  margin: 0 auto;
+  margin-left: 200px;
+}
 .weather-app-wrapper {
   background: rgb(4, 212, 232);
   background: linear-gradient(
