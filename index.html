@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Violet Weather app</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+
+    <script
+      src="https://kit.fontawesome.com/e09499d587.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="weather-app-wrapper">
+        <form class="search-form" id="search-form">
+          <input
+            type="text"
+            placeholder="Enter city"
+            autofocus
+            class="shadow-sm"
+            id="search-bar"
+          />
+
+          <button
+            type="Submit"
+            placeholder="Enter city"
+            autofocus
+            class="shadow-sm"
+            id="searchbutton"
+          >
+            Search
+          </button>
+
+          <button id="currentlocation">Current location</button>
+        </form>
+        <div class="row">
+          <div class="col-3">
+            <img
+              src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png"
+              class="picture"
+              id="icon"
+            />
+          </div>
+          <div class="col-3">
+            <ul>
+              <li><h1 id="city">Kyiv</h1></li>
+              <li class="current" id="current-date">10:20, Thurs, June 7</li>
+              <li class="current" id="description">Sunny</li>
+            </ul>
+          </div>
+          <div class="col-3 temperature" id="temperature">22</div>
+          <div class="col-3">
+            <ul>
+              <li class="unit">
+                <a href="#" id="celsius-link" class="active">°C</a> |
+                <a href="#" id="fahrenheit-link">°F</a>
+              </li>
+
+              <li class="current" id="humidity">Humidity 34%</li>
+              <li class="current" id="windspeed">Wind : 0 km/h</li>
+            </ul>
+          </div>
+          <br />
+          <br />
+          <div class="col-2">
+            <ul>
+              <li>Fri</li>
+              <li>
+                <i class="fa-solid fa-sun"></i>
+              </li>
+              <li>24</li>
+            </ul>
+          </div>
+          <div class="col-2">
+            <ul>
+              <li>Sat</li>
+              <li>
+                <i class="fa-solid fa-sun"></i>
+              </li>
+              <li>26</li>
+            </ul>
+          </div>
+          <div class="col-2">
+            <ul>
+              <li>Sun</li>
+              <li>
+                <i class="fa-solid fa-sun"></i>
+              </li>
+              <li>25</li>
+            </ul>
+          </div>
+          <div class="col-2">
+            <ul>
+              <li>Mon</li>
+              <li>
+                <i class="fa-solid fa-cloud-sun"></i>
+              </li>
+              <li>20</li>
+            </ul>
+          </div>
+          <div class="col-2">
+            <ul>
+              <li>Tue</li>
+              <li>
+                <i class="fa-solid fa-cloud-sun"></i>
+              </li>
+              <li>19</li>
+            </ul>
+          </div>
+          <div class="col-2">
+            <ul>
+              <li>Wed</li>
+              <li>
+                <i class="fa-solid fa-sun"></i>
+              </li>
+              <li>24</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
