@@ -32,25 +32,15 @@ small {
   margin: 0 auto;
   border-radius: 16px;
 }
-.allColl {
-  width: 100%;
-}
-.col-2 {
-  padding: 50px;
-  font-size: 25px;
-  line-height: 50px;
-}
+
 .col-3 {
   padding-top: 70px;
   text-align: center;
 }
-.temperature,
-.first-sun {
+.temperature {
   font-size: 70px;
 }
-.first-sun {
-  margin-top: 25px;
-}
+
 .unit {
   font-size: 30px;
   color: black;
@@ -62,4 +52,22 @@ small {
   cursor: default;
   color: black;
   text-decoration: none;
+}
+.weather-forecast {
+  margin-top: 20px;
+  text-align: center;
+}
+.weather-forecast-date {
+  font-size: 25px;
+}
+.weather-forecast-temperature {
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.5;
+  color: black;
+  font-weight: 700;
+}
+.weather-forecast-temperature-min {
+  margin-left: 10px;
+  opacity: 0.6;
 }
