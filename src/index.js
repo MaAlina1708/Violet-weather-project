@@ -30,7 +30,6 @@ let months = [
   "December",
 ];
 let month = months[now.getMonth()];
-
 let date = now.getDate();
 
 currentDate.innerHTML = `${hours}:${minutes}, ${day}, ${month}, ${date}`;
@@ -40,13 +39,11 @@ function formatDay(timestamp) {
   let date = new Date(timestamp * 1000);
   let day = date.getDay();
   let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
-
   return days[day];
 }
 
 function displayForecast(response) {
   let forecast = response.data.daily;
-
   let forecastElement = document.querySelector("#forecast");
 
   let forecastHTML = `<div class="row">`;
@@ -174,3 +171,5 @@ let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
 // week 8
+searchCity("Kyiv");
+displayForecast();

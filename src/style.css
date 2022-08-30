@@ -38,7 +38,7 @@ small {
   text-align: center;
 }
 .temperature {
-  font-size: 70px;
+  font-size: 60px;
 }
 
 .unit {
@@ -46,7 +46,7 @@ small {
   color: black;
 }
 .current {
-  font-size: 20px;
+  font-size: 17px;
 }
 .col-3 .active {
   cursor: default;
