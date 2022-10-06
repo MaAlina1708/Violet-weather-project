@@ -23,9 +23,9 @@ small {
   background: rgb(4, 212, 232);
   background: linear-gradient(
     90deg,
-    rgba(4, 212, 232, 1) 0%,
-    rgba(183, 121, 255, 1) 100%,
-    rgba(255, 191, 100, 1) 100%
+    rgb(219, 211, 242) 0%,
+    #e6a9f7 100%,
+    #b564d4 100%
   );
   max-width: 900px;
   margin-top: 35px;

@@ -173,3 +173,11 @@ celsiusLink.addEventListener("click", displayCelsiusTemperature);
 // week 8
 searchCity("Kyiv");
 displayForecast();
+
+const n = 200;
+let suum = 0;
+for (let i = 1; i <= n; i++) {
+  suum += i; // 1 + 2 + 3 + 4 + 5
+}
+
+console.log(suum); // 15
